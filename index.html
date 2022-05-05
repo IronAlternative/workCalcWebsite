@@ -7,17 +7,25 @@
     <title>Fee Calculator</title>
   </head>
   <body>
-    <form action="">
+    <div id="plumbingCalc">
+      <h1>Plumbing Calcs</h1>
+
       <label>
-        Residential Plumbing Fixture Count: <input type="text" id="resplum"
-        name="ResPlum"
+        Residential Plumbing Fixture Count:
+        <input type="text" id="resplum" name="ResPlum" />
       </label>
+
+      <label>Fee: <input type="text" id="fee" name="finalFee" /></label>
       <br />
 
       <label>
-        Residential Plumbing Fixtures Maintain: <input type="text"
-        id="resplumMain" name="ResPlumMain"
+        Residential Plumbing Fixtures Maintain:
+        <input type="text" id="resplumMain" name="ResPlumMain" />
       </label>
-    </form>
+      <br />
+      <input type="button" id="sbmt" value="Submit" />
+    </div>
+
+    <script src="scripts.js"></script>
   </body>
 </html>
