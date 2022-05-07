@@ -4,63 +4,131 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Fee Calculator</title>
   </head>
+
   <body>
-    <div id="plumbingCalc">
-      <h1>Plumbing Calcs</h1>
-      <form>
-        <p>
-          <label>
-            Residential Plumbing Fixture Count:
-            <input type="text" id="resplum" name="ResPlum" size="2" />
-          </label>
-        </p>
-        <label>
-          Proposed: Fixture Fee:
-          <input readonly type="text" id="fixfee" name="fixFee" size="4" />
-        </label>
-        <label>
-          CoC Fee:
-          <input readonly type="text" id="confee" name="conFee" size="4" />
-        </label>
-        <label>
-          Final Fee:
-          <input readonly type="text" id="fee" name="finalFee" size="4" />
-        </label>
 
-        <br />
-
-        <label>
-          Maintain: Fixture Fee:
-          <input
-            readonly
-            type="text"
-            id="mainFixfee"
-            name="finalFee"
-            size="4"
-          />
-        </label>
-        <label>
-          Coc Fee:
-          <input
-            readonly
-            type="text"
-            id="mainconfee"
-            name="finalFee"
-            size="4"
-          />
-        </label>
-        <label>
-          Final Fee:
-          <input readonly type="text" id="mainfee" name="finalFee" size="4" />
-        </label>
-        <br />
-        <input readonly type="button" id="sbmt" value="Submit" />
-        <input type="reset" id="rst" value="Reset" />
-      </form>
+    <div class="grid-container">
+      <div class="grid-item" id="topnav" style="position: fixed; top: 0px;">
+        hi
+      </div>
+      <div class="grid-item" id="plumbingCalc">
+        <div class="flex-container">
+          <h1>Residential Plumbing Calcs</h1>
+          <form>
+            <p>
+              <label>
+                Enter Plumbing Fixture Count:
+                <input type="text" id="resplum" name="ResPlum" size="2" />
+              </label>
+            </p>
+            <p>
+              <label>
+                Proposed: Fixture Fee:
+                <input readonly type="text" class="fee-result" id="fixfee" name="fixFee" size="4" />
+              </label>
+              <label>
+                CoC Fee:
+                <input readonly type="text" class="fee-result" id="confee" name="conFee" size="4" />
+              </label>
+              <label>
+                Final Fee:
+                <input readonly type="text" class="fee-result" id="fee" name="finalFee" size="4" />
+              </label>
+            </p>
+            <p>
+              <label>
+                Maintain: Fixture Fee:
+              <input
+                readonly
+                class="fee-result"
+                type="text"
+                id="mainFixfee"
+                  name="finalFee"
+                size="4"
+                />
+              </label>
+              <label>
+                Coc Fee:
+              <input
+                readonly
+                class="fee-result"
+                type="text"
+                id="mainconfee"
+                name="finalFee"
+                size="4"
+              />
+              </label>
+              <label>
+              Final Fee:
+                <input readonly class="fee-result" type="text" id="mainfee" name="finalFee" size="4" />
+              </label>
+            </p>
+            <input class="buttons" readonly type="button" id="sbmt" value="Submit" />
+            <input class="buttons" type="reset" id="rst" value="Reset" />
+          </form>
+        </div>
+      </div>
+      <div class="grid-item" id="commPlumb" /> 
+        <h1>Commercial Plumbing Calcs</h1>
+        <form>
+          <p>
+            <label>
+              Enter Plumbing Fixture Count:
+              <input type="text" id="complum" name="ComPlum" size="2" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Proposed: Fixture Fee:
+              <input readonly type="text" class="fee-result" id="fixfeecomm" name="fixFeeComm" size="4" />
+            </label>
+            <label>
+              CoC Fee:
+              <input readonly type="text" class="fee-result" id="confeecomm" name="conFeeComm" size="4" />
+            </label>
+            <label>
+              Final Fee:
+              <input readonly type="text" class="fee-result" id="feecomm" name="finalFeeComm" size="4" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Maintain: Fixture Fee:
+             <input
+               readonly
+               class="fee-result"
+               type="text"
+               id="mainfixfeecomm"
+                name="finalFeeComm"
+               size="4"
+              />
+            </label>
+            <label>
+              Coc Fee:
+             <input
+               readonly
+               class="fee-result"
+               type="text"
+               id="mainconfeecomm"
+               name="cocFeeComm"
+               size="4"
+             />
+            </label>
+          
+            <label>
+             Final Fee:
+              <input readonly class="fee-result" type="text" id="mainfeecomm" name="mainfinalFeeComm" size="4" />
+            </label>
+            
+          </p>
+          <input class="buttons" readonly type="button" id="sbmt2" value="Submit" />
+          <input class="buttons" type="reset" id="rst" value="Reset" />
+        </form>
+      </div> //end grid-container
     </div>
-
     <script src="scripts.js"></script>
   </body>
 </html>
