@@ -9,21 +9,56 @@
   <body>
     <div id="plumbingCalc">
       <h1>Plumbing Calcs</h1>
+      <form>
+        <p>
+          <label>
+            Residential Plumbing Fixture Count:
+            <input type="text" id="resplum" name="ResPlum" size="2" />
+          </label>
+        </p>
+        <label>
+          Proposed: Fixture Fee:
+          <input readonly type="text" id="fixfee" name="fixFee" size="4" />
+        </label>
+        <label>
+          CoC Fee:
+          <input readonly type="text" id="confee" name="conFee" size="4" />
+        </label>
+        <label>
+          Final Fee:
+          <input readonly type="text" id="fee" name="finalFee" size="4" />
+        </label>
 
-      <label>
-        Residential Plumbing Fixture Count:
-        <input type="text" id="resplum" name="ResPlum" />
-      </label>
+        <br />
 
-      <label>Fee: <input type="text" id="fee" name="finalFee" /></label>
-      <br />
-
-      <label>
-        Residential Plumbing Fixtures Maintain:
-        <input type="text" id="resplumMain" name="ResPlumMain" />
-      </label>
-      <br />
-      <input type="button" id="sbmt" value="Submit" />
+        <label>
+          Maintain: Fixture Fee:
+          <input
+            readonly
+            type="text"
+            id="mainFixfee"
+            name="finalFee"
+            size="4"
+          />
+        </label>
+        <label>
+          Coc Fee:
+          <input
+            readonly
+            type="text"
+            id="mainconfee"
+            name="finalFee"
+            size="4"
+          />
+        </label>
+        <label>
+          Final Fee:
+          <input readonly type="text" id="mainfee" name="finalFee" size="4" />
+        </label>
+        <br />
+        <input readonly type="button" id="sbmt" value="Submit" />
+        <input type="reset" id="rst" value="Reset" />
+      </form>
     </div>
 
     <script src="scripts.js"></script>
