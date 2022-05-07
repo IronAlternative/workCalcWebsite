@@ -2,7 +2,7 @@ var resPlum;
 var costConstructfee = 14;
 var costConstrt = 500;
 var fixFee = 50;
-
+//test
 window.onload = function()  // sets focus on first box, submit button
 {
     document.getElementById("resplum").focus();
